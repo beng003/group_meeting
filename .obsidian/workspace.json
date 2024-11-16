@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5c20c1906ea85c74",
+    "type": "split",
+    "children": [
+      {
+        "id": "c194d2bedc4487ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c58b81c439fbe1ad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#excalidraw",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c63179e9df7f03e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "aeb3a884042ed626",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9168eac93b46bb03",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c883f6036d989de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4dbcf9ef95e50431",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "2d1fb2e5d302e220",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "eae8008a82263077",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "aaf40fa1e5d0b244",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "db20f5f90c24c1ac",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "27b7c212baa25879",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "8d93b52fc9e43979",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "workspaces:管理工作区布局": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "transfer-latex-from-gpt:Convert LaTeX to MathJax": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "command-palette:打开命令面板": false,
+      "omnisearch:Omnisearch": false,
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "db20f5f90c24c1ac",
+  "lastOpenFiles": [
+    "可追踪秘密分享/概念符号表示.md",
+    "可追踪秘密分享/可追踪秘密共享.md",
+    "身份信息.md",
+    "未命名.canvas",
+    "test.md",
+    "tpl-con-2-1-box.md",
+    "Drawing 2024-11-15 17.18.09.excalidraw.md",
+    "可追踪秘密分享/图片/ExpTrace.png",
+    "未命名 1.canvas",
+    "可追踪秘密分享/图片/ExpUniTrace.png",
+    "可追踪秘密分享/图片/ExpNI.png",
+    "Excalidraw/Drawing 2024-11-13 20.44.53.excalidraw.md",
+    "欢迎.md",
+    "未命名.md",
+    "项目/开发计划.md",
+    "未命名 1",
+    "未命名",
+    "可追踪秘密分享/~$概念符号表示.pptx",
+    "可追踪秘密分享/概念符号表示.003.png",
+    "可追踪秘密分享/概念符号表示.002.png",
+    "可追踪秘密分享/概念符号表示.001.png",
+    "可追踪秘密分享/概念符号表示.004.png",
+    "可追踪秘密分享/概念符号表示.pptx",
+    "2024-11-13.md",
+    "Excalidraw/Drawing 2024-11-12 18.10.58.excalidraw.md",
+    "项目",
+    "可追踪秘密分享/图片",
+    "Excalidraw",
+    "可追踪秘密分享",
+    "202411121707.md",
+    "未命名 2.canvas"
+  ]
+}
