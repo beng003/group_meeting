@@ -4,17 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "7d1243ee30914db9",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "ab408b7a37a82403",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "diff-view",
+              "state": {
+                "file": "可追踪秘密分享/00.使用场景.md",
+                "staged": true
+              },
+              "icon": "git-pull-request",
+              "title": "Diff View (00.使用场景)"
             }
           }
         ]
@@ -177,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 323.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,40 +189,46 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false,
       "transfer-latex-from-gpt:Convert LaTeX to MathJax": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "command-palette:打开命令面板": false,
-      "omnisearch:Omnisearch": false,
-      "homepage:Open homepage": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "db20f5f90c24c1ac",
+  "active": "ab408b7a37a82403",
   "lastOpenFiles": [
-    "可追踪秘密分享/概念符号表示.md",
+    "可追踪秘密分享/03.基于 Blakley 秘密共享的方案.md",
     "可追踪秘密分享/可追踪秘密共享.md",
-    "身份信息.md",
-    "未命名.canvas",
+    "可追踪秘密分享/笔记.md",
+    "可追踪秘密分享/问题.md",
+    "可追踪秘密分享/02.基于 shamir可追踪秘密分享.md",
+    "可追踪秘密分享/01.概念符号表示.md",
+    "可追踪秘密分享/00.使用场景.md",
+    "Pasted image 20241117183256.png",
+    "Pasted image 20241117183238.png",
+    "Pasted image 20241117183225.png",
+    "未命名",
     "test.md",
+    "可追踪秘密分享/图片/Trace.png",
+    "可追踪秘密分享/图片/ExpUniTrace.png",
     "tpl-con-2-1-box.md",
+    "身份信息.md",
+    "欢迎.md",
+    "项目/开发计划.md",
+    "Excalidraw/Drawing 2024-11-13 20.44.53.excalidraw.md",
     "Drawing 2024-11-15 17.18.09.excalidraw.md",
+    "未命名.canvas",
     "可追踪秘密分享/图片/ExpTrace.png",
     "未命名 1.canvas",
-    "可追踪秘密分享/图片/ExpUniTrace.png",
     "可追踪秘密分享/图片/ExpNI.png",
-    "Excalidraw/Drawing 2024-11-13 20.44.53.excalidraw.md",
-    "欢迎.md",
     "未命名.md",
-    "项目/开发计划.md",
     "未命名 1",
-    "未命名",
     "可追踪秘密分享/~$概念符号表示.pptx",
     "可追踪秘密分享/概念符号表示.003.png",
     "可追踪秘密分享/概念符号表示.002.png",
     "可追踪秘密分享/概念符号表示.001.png",
-    "可追踪秘密分享/概念符号表示.004.png",
     "可追踪秘密分享/概念符号表示.pptx",
     "2024-11-13.md",
     "Excalidraw/Drawing 2024-11-12 18.10.58.excalidraw.md",
