@@ -16,7 +16,7 @@ footer{color:black;font-size: 20px;}
 <!-- _class: lead gaia -->
 
 # Traceable Secret Sharing: Strong Security and Efficient Constructions
-
+111
 Dan Boneh, Aditi Partap, and Lior Rotem
 Stanford University
 
