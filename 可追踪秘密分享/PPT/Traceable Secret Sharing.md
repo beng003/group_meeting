@@ -224,7 +224,7 @@ $$H = \{h \in F[X] : \deg(h) \leq k \ \wedge \ |\{j \in [N] : h(x_j ) = y_j\}| \
 ---
 ## 3.4 追踪算法
 
-![](../图片/Trace.png)
+![](../图片/shamirTrace.png)
 
 ---
 
@@ -379,7 +379,7 @@ $$t \cdot (t+1) \cdot \log p$$
 
 ## 5.1 基本追踪过程
 
-在 Blakley+ 方案中，秘密是一个点 $s \in F_p^t$。为了生成 $n$ 个共享，$\text{Share}$ 算法采样 $r_1, \ldots, r_t$，使其和等于 $s$。对于 $i \in [n]$，第 $i$ 个共享由 $t$ 个随机超平面 $H_i^{(1)}, \ldots, H_i^{(t)}$ 组成，这些超平面分别通过点 $r_1, \ldots, r_t$。
+为了生成 $n$ 个共享，$\text{Share}$ 算法采样 $r_1, \ldots, r_t$，使其和等于 $s$。对于 $i \in [n]$，第 $i$ 个共享由 $t$ 个随机超平面 $H_i^{(1)}, \ldots, H_i^{(t)}$ 组成，这些超平面分别通过点 $r_1, \ldots, r_t$。
 
 - **追踪密钥（$tk$）**：由 $r_2, \ldots, r_t$ 以及每个参与方的第一个超平面 $H_1^{(1)}, \ldots, H_n^{(1)}$ 组成。
 - **验证密钥（$vk$）**：由 $H_i^{(1)}, \ldots, H_i^{(t)}$（每个共享的所有超平面）组成。
@@ -409,68 +409,74 @@ $$r_1' = s' - (r_2 + \cdots + r_t)$$
 
 ---
 
-# 字体修改
-全局格式修改在源代码 31~35 行
-`h1`一级大标题
-`h2`二级大标题
-`p`正文字体
-`table`表格字体,居中
-`li`列表字体,居左
-```css
-section h1 {font-size:40px;color:black;margin-top:px;}
-section h2 {font-size:30px;color:black;margin-top:px;}
-section p {font-size: 25px;color:black;}
-section table {text-align: center;font-size: 32px;color:black;}
-section a {font-size: 25px;color:black;}
-li {font-size: 30px;text-align: left;}
-```
+### 5.1.1 追踪准确性
+
+- **捕获被破坏的参与方**：由于 $R$ 是正确的，任何其共享被硬编码到 $R$ 的参与方 $i$，其 $r_1'$ 必然位于其第一个超平面 $H_i^{(1)}$ 上。因此，所有被破坏的参与方都能被追踪算法捕获。
+- **避免诬陷诚实参与方**：如果某个参与方 $i$ 是诚实的，则 $r_1'$ 与 $H_i^{(1)}$ 统计上独立，因此 $r_1'$ 位于 $H_i^{(1)}$ 上的概率非常小，从而不会错误指控诚实的参与方。
 
 ---
-# 图片格式
-默认居中,临时在某一slites中修改可以
-```css
+
+### 5.1.2 完整算法
+![](../图片/BlakleyTrace.png)
+
+---
 <style scoped>
-img {
-    margin-left: auto; margin-right:auto; 
-    tisplay:block;margin:0 auto;width:25cm;
-    }
+p {font-size: 40px;text-align: left;}
 </style>
-或者:
-![w:2cm h:2cm](fm.png)
-```
-![w:2cm h:2cm](fm.png)
+### 5.1.3 验证算法 (Verify)
+
+验证算法接受一个验证密钥 $vk = \{(a_{1,1}, b_{1,1}), \dots, (a_{n,1}, b_{n,1})\}$、一个子集 $I$ 和一个证明 $\pi = \{(a'_{i,1}, b'_{i,1})\}_{i \in I}$。如果且仅如果 $I$ 和 $\pi$ 与 $vk$ 一致，即对所有 $i \in I$ 满足 $(a'_{i,1}, b'_{i,1}) = (a_{i,1}, b_{i,1})$，则输出 1，否则输出 0。
 
 ---
-# 左右排布
-```
-![bg left:40% w:5cm h:5cm](fm.png)
-```
-![bg left:40% w:5cm h:5cm](fm.png)
+<style scoped>
+p {font-size: 40px;text-align: left;}
+</style>
+## 5.2 增加非可归责性
+
+$tk$ 以明文形式包含了每个参与方的第一个超平面 $(a_{i,1}, b_{i,1})$，掌握追踪密钥 $tk$ 可以轻松地伪造证据，错误地指控某个无辜方将其共享贡献给盗版重建盒 $R$。这违反了**非可归责性**。
+
+追踪过程并不需要完整知道 $(a_{i,1}, b_{i,1})$，仅需要能够判断某一点（即由追踪算法 $\text{Trace}$ 重建出的 $r_1$）是否位于由 $(a_{i,1}, b_{i,1})$ 确定的超平面上。
 
 ---
-# 左右排布
-```
-![bg right:40% w:5cm h:5cm](fm.png)
-```
-![bg right:40% w:5cm h:5cm](fm.png)
+
+为实现这一目的，只需将 $(a_{i,1}, b_{i,1})$ 的信息以某种方式隐藏起来即可。具体做法如下：
+- $a_{i,1}$ 可以表示为 $((a_{i,1})_1, \ldots, (a_{i,1})_t)$。
+- 通过一个同态单向函数 $f$，计算并存储 $f((a_{i,1})_1), \ldots, f((a_{i,1})_t)$ 和 $f(b_{i,1})$。
+
+追踪密钥 $tk$ 和验证密钥 $vk$ 会包含这些 $f$ 的评估值，而 $tk$ 还会包含之前定义的 $r_2, \ldots, r_t$。
+
+利用同态性，追踪算法 $\text{Trace}$ 可以在隐藏的 $f$-空间中验证 $\langle a_{i,1}, r_1 \rangle = b_{i,1}$ 是否成立，而无需直接知道 $a_{i,1}$ 和 $b_{i,1}$ 的明文值。验证算法 $\text{Verify}$ 同样可以进行这种检查。
 
 ---
-# CSS 说明
-```
-https://www.w3school.com.cn/css/css_image_gallery.asp
 
-https://marpit.marp.app/theme-css
-```
+- 假设同态单向函数 $f$ 是循环群中的指数运算，其单向性基于离散对数问题在群中的困难性。
+- 通过一个群生成算法 $G$ 形式化，算法接受安全参数作为输入，并输出一个三元组 $(G, g, p)$
+	- 对于群元素 $h \in G$ 和向量 $x = (x_1, \ldots, x_\ell)$（元素来自 $\mathbb{Z}_p$），定义 $h^x$ 为向量 $(h^{x_1}, \ldots, h^{x_\ell})$。
+	- 对于群元素向量 $h = (h_1, \ldots, h_\ell)$ 和向量 $x$，定义 $h^x := \prod_i h_i^{x_i}$。
 
-# 更多细节
-```
-https://marpit.marp.app/usage
-```
+---
+### 方案更改如下：
 
-# 更多Markdown 语法
-```
-https://www.markdown.xyz/basic-syntax/
-```
+1. **共享算法的更改**  
+   $\text{Share}(1^\lambda, s, n, t)$ 现在会采样一个群 $(G, g, p) \leftarrow G(1^\lambda)$。然后计算 $r_1, \ldots, r_t$ 和 $sh_i = \{(a_{i,j}, b_{i,j})\}_{j \in [t]}$（与之前一致）。  
+   共享算法进一步计算：
+   $$y_i \gets g^{a_{i,1}}, \quad z_i \gets g^{b_{i,1}}, \quad \text{对于每个 } i \in [n]。$$
+   然后设置：
+   $$tk \gets ((G, g, p), r_2, \ldots, r_t, y_1, \ldots, y_n, z_1, \ldots, z_n)$$
+   $$vk \gets ((G, g, p), y_1, \ldots, y_n, z_1, \ldots, z_n)$$
+
+---
+2. **追踪算法的更改**  
+   追踪算法 $\text{Trace}$ 按照之前的方法计算 $r_1$，并将被损坏方的索引集合 $I$ 设置为满足以下条件的所有索引 $i$：
+   $$y_i^{r_1} = z_i。$$
+   证明 $\pi$ 现在是向量 $r_1$。
+
+3. **验证算法的更改**  
+   - 检查是否对所有 $i \in I$，有 $y_i^{r_1} = z_i$；
+   - 检查是否存在 $i' \in [n] \setminus I$，使得 $y_{i'}^{r_1} \neq z_{i'}$。  
+   验证算法仅当上述两个条件同时满足时输出 1。
+
+新的方案称为 **NITB**（代表“Non-Imputable Traceable Blakley”）。
 
 ---
 <style scoped>
@@ -483,4 +489,4 @@ footer{color:black;font-size: 20px;}
 </style>
 <!-- _class: lead gaia -->
 
-# 谢谢朋友们
+# 感谢聆听
