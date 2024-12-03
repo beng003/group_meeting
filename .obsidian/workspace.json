@@ -24,11 +24,11 @@
         ]
       },
       {
-        "id": "df61c3beacb5f853",
+        "id": "3e74199214599d86",
         "type": "tabs",
         "children": [
           {
-            "id": "619f2434ac7c9fa3",
+            "id": "97e951b0c082295f",
             "type": "leaf",
             "state": {
               "type": "marp-preview-view",
@@ -215,10 +215,12 @@
       "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "619f2434ac7c9fa3",
+  "active": "97e951b0c082295f",
   "lastOpenFiles": [
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.pdf",
+    "test.md",
+    "可追踪秘密分享/PPT/~$Traceable Secret Sharing.pptx",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.md",
+    "可追踪秘密分享/PPT/Traceable Secret Sharing.pdf",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.052.png",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.051.png",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.050.png",
@@ -229,7 +231,6 @@
     "可追踪秘密分享/PPT/Traceable Secret Sharing.045.png",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.044.png",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.043.png",
-    "可追踪秘密分享/PPT/~$Traceable Secret Sharing.pptx",
     "可追踪秘密分享/02.基于 shamir可追踪秘密分享.md",
     "可追踪秘密分享/03.基于 Blakley 秘密共享的方案.md",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.pptx",
@@ -241,7 +242,6 @@
     "可追踪秘密分享/01.概念符号表示.md",
     "可追踪秘密分享/00.使用场景.md",
     "可追踪秘密分享/PPT/Traceable Secret Sharing.html",
-    "test.md",
     "可追踪秘密分享/PPT/Slides.html",
     "Marp_theme_for_THUslides-main/Slides - 副本.md",
     "Marp_theme_for_THUslides-main/Slides.pdf",
