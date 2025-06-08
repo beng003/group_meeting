@@ -6,6 +6,7 @@ footer:
 style: "section footer{color:black;font-size: 20px;}"
 ---
 <style scoped>
+<style scoped>
 section h1 {text-align: center;font-size: 60px;color:black;}
 section {
   background-image:url('./fm.png');
