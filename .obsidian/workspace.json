@@ -4,17 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "144165ec10d43a8a",
+        "id": "aa33e1f3c2967051",
         "type": "tabs",
         "children": [
           {
-            "id": "f96689c296d5f890",
+            "id": "b294c28dcdaf819e",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "markdown",
+              "state": {
+                "file": "隐藏参数的揭序加密/PPT/Parameter-Hiding Order Revealing Encryption.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Parameter-Hiding Order Revealing Encryption"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f6fcb52ab58a60e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "721bff2361b0d015",
+            "type": "leaf",
+            "state": {
+              "type": "marp-preview-view",
               "state": {},
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Deck Preview"
             }
           }
         ]
@@ -75,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5
+    "width": 331.5
   },
   "right": {
     "id": "9168eac93b46bb03",
@@ -91,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "隐藏参数的揭序加密/笔记/构造证明/双线性对构造pph.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "双线性对构造pph 的反向链接列表"
             }
           },
           {
@@ -135,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "隐藏参数的揭序加密/PPT/Parameter-Hiding Order Revealing Encryption.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Parameter-Hiding Order Revealing Encryption 的大纲"
             }
           },
           {
@@ -159,8 +181,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -176,13 +198,25 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "02aa75867b690372",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "隐藏参数的揭序加密/笔记/构造证明/双线性对构造pph.md"
+              },
+              "icon": "lucide-info",
+              "title": "双线性对构造pph的笔记属性"
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 354.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,53 +234,52 @@
   },
   "active": "db20f5f90c24c1ac",
   "lastOpenFiles": [
-    "可追踪秘密分享/03.基于 Blakley 秘密共享的方案.md",
-    "可追踪秘密分享/笔记.md",
-    "可追踪秘密分享/未解释问题.md",
-    "可追踪秘密分享/问题.md",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing 1.md",
-    "可追踪秘密分享/可追踪秘密共享.md",
-    "可追踪秘密分享/02.基于 shamir可追踪秘密分享.md",
-    "可追踪秘密分享/01.概念符号表示.md",
-    "可追踪秘密分享/00.使用场景.md",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.md",
-    "可追踪秘密分享/03.1.Blakley秘密共享方案：分发和重构机制.md",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.pdf",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing 简.md",
-    "Pasted image 20241124182909.png",
-    "test.md",
-    "Marp_theme_for_THUslides-main/算法训练营第八期-科研文献.pdf",
-    "未命名/未命名.md",
-    "未命名",
-    "可追踪秘密分享/PPT/~$Traceable Secret Sharing 简.pptx",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing 简.pptx",
-    "可追踪秘密分享/PPT/~$Traceable Secret Sharing.pptx",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.052.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.051.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.050.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.049.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.048.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.047.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.046.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.045.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.044.png",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.pptx",
-    "可追踪秘密分享/Traceable Secret Sharing.md",
-    "可追踪秘密分享/PPT/Traceable Secret Sharing.html",
-    "可追踪秘密分享/PPT/Slides.html",
-    "Marp_theme_for_THUslides-main/Slides - 副本.md",
-    "Marp_theme_for_THUslides-main/Slides.pdf",
+    "隐藏参数的揭序加密/图片/GAME_REAL_SIM.png",
+    "隐藏参数的揭序加密/PPT/Parameter-Hiding Order Revealing Encryption.md",
+    "隐藏参数的揭序加密/笔记/构造证明/平滑CLWW构造参数隐藏ORE.md",
+    "隐藏参数的揭序加密/图片/GAME_PPH.png",
+    "隐藏参数的揭序加密/PPT/~$Parameter-Hiding Order Revealing Encryption.pptx",
     "Marp_theme_for_THUslides-main/Slides.md",
+    "隐藏参数的揭序加密/笔记/构造证明/双线性对构造pph.md",
+    "隐藏参数的揭序加密/笔记/构造证明/PPH构造平滑泄露CLWW.md",
+    "nzpBD37.tmp",
+    "Marp_theme_for_THUslides-main.zip",
+    "隐藏参数的揭序加密/PPT/~$Traceable Secret Sharing 简.pptx",
+    "可追踪秘密分享/PPT/~$Traceable Secret Sharing 简.pptx",
+    "隐藏参数的揭序加密/PPT/Parameter-Hiding Order Revealing Encryption.pptx",
+    "test.md",
+    "Pasted image 20241124182909.png",
     "Marp_theme_for_THUslides-main/README.md",
-    "tpl-con-2-1-box.md",
-    "Excalidraw/Drawing 2024-11-18 19.32.53.excalidraw.md",
-    "export/Traceable Secret Sharing/plugin/chalkboard/README.md",
-    "export/Traceable Secret Sharing/plugin/chart/README.md",
-    "export/Traceable Secret Sharing/plugin/customcontrols/README.md",
-    "export/Traceable Secret Sharing/plugin/menu/CONTRIBUTING.md",
-    "export/Traceable Secret Sharing/plugin/menu/README.md",
-    "欢迎.md",
+    "Marp_theme_for_THUslides-main/算法训练营第八期-科研文献.pdf",
+    "隐藏参数的揭序加密/笔记/构造证明/CLWW.md",
+    "隐藏参数的揭序加密/笔记/构造证明/CLWW.html",
+    "隐藏参数的揭序加密/PPT/Parameter-Hiding Order Revealing Encryption.html",
+    "隐藏参数的揭序加密/笔记/01.概念符号表示.md",
+    "隐藏参数的揭序加密/笔记/00.使用场景.md",
+    "隐藏参数的揭序加密/图片/研究路线(反).svg",
+    "隐藏参数的揭序加密/PPT/bg.png",
+    "隐藏参数的揭序加密/笔记/构造证明/PPH构造平滑泄露CLWW.html",
+    "隐藏参数的揭序加密/笔记/构造证明/平滑泄露的CLWW.md",
+    "隐藏参数的揭序加密/图片/GAME_para_hid.png",
+    "隐藏参数的揭序加密/笔记/问题.md",
+    "可追踪秘密分享/PPT/Traceable Secret Sharing.md",
+    "隐藏参数的揭序加密/笔记/笔记.md",
     "未命名.canvas",
+    "隐藏参数的揭序加密/笔记/未解释问题.md",
+    "隐藏参数的揭序加密/笔记/可追踪秘密共享.md",
+    "隐藏参数的揭序加密/图片/BlakleyRec.png",
+    "隐藏参数的揭序加密/PPT/Traceable Secret Sharing 简.md",
+    "隐藏参数的揭序加密/PPT/fm.png",
+    "隐藏参数的揭序加密/PPT/Traceable Secret Sharing 1.md",
+    "可追踪秘密分享/笔记/00.使用场景.md",
+    "隐藏参数的揭序加密/图片/SimpleTracingAlgorithm.png",
+    "隐藏参数的揭序加密/图片/ExpUniTrace.png",
+    "隐藏参数的揭序加密/笔记/03.基于 Blakley 秘密共享的方案.md",
+    "隐藏参数的揭序加密/笔记/02.基于 shamir可追踪秘密分享.md",
+    "隐藏参数的揭序加密/笔记/03.1.Blakley秘密共享方案：分发和重构机制.md",
+    "可追踪秘密分享/笔记/01.概念符号表示.md",
+    "可追踪秘密分享/笔记/问题.md",
+    "可追踪秘密分享/笔记/未解释问题.md",
     "未命名 1.canvas",
     "未命名 2.canvas"
   ]
